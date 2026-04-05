@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - L-Earn</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation with Logo Above Links -->
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="banner-content">
+            <span class="banner-badge">New</span>
+            <span class="banner-text">Join our mission to empower children globally!</span>
+            <a href="contact.html" class="banner-btn">Get Involved</a>
+        </div>
+    </div>
+
     <nav class="navbar">
         <div class="nav-container-narrow">
             <div class="nav-brand-top">
@@ -17,13 +28,11 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
                 <li><a href="problem.html">Problem</a></li>
-                <li><a href="children.html">Children We Help</a></li>
                 <li><a href="solution.html">Solution</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
                 <li><a href="innovation.html">Innovation</a></li>
                 <li><a href="budget.html">Budget</a></li>
-                <li><a href="sustainability.html">Sustainability</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -46,7 +55,8 @@
                         <div class="contact-icon">📧</div>
                         <div class="contact-details">
                             <h4>Email</h4>
-                            <p>priscamukelenga006@gmail.com</p>
+                            <p><a href="mailto:priscamukelenga006@gmail.com"
+                                    class="contact-link">priscamukelenga006@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -54,6 +64,18 @@
                         <div class="contact-details">
                             <h4>Location</h4>
                             <p>Goma, Democratic Republic of Congo</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Added WhatsApp Contact -->
+                <div class="contact-info-card" style="margin-top: 1.5rem;">
+                    <h3>Direct Chat</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p><a href="+256783217057" class="contact-link" target="_blank">Chat with us on WhatsApp</a>
+                            </p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -64,8 +86,11 @@
                         </div>
                     </div>
                 </div>
-                
-                <form class="contact-form" id="contactForm">
+
+                <form class="contact-form" id="contactForm" action="mailto:priscamukelenga006@gmail.com" method="POST">
+                    <!-- Formsubmit Configurations -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New submission from L-Earn website!">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name</label>
@@ -78,11 +103,12 @@
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                        <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+                        <textarea id="message" name="message" rows="6" placeholder="Type your message here..."
+                            required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message <span class="arrow">→</span></button>
                 </form>
@@ -100,4 +126,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
