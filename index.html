@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>home</title>
 </head>
+
 <body>
-  <nav class="navbar">
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="banner-content">
+            <span class="banner-badge">New</span>
+            <span class="banner-text">Join our mission to empower children globally!</span>
+            <a href="contact.html" class="banner-btn">Get Involved</a>
+            <!-- Floating Contact Icons -->
+            <div class="header-socials" style="display:flex; gap:10px; margin-left:15px;">
+                <a href="mailto:priscamukelenga006@gmail.com" class="social-icon" title="Email Us"
+                    style="text-decoration:none; color:white;">📧 priscamukelenga006@gmail</a>
+                <a href="+256783217057" class="social-icon" target="_blank" title="WhatsApp Us"
+                    style="text-decoration:none; color:white;">📱 +256783217057</a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
         <div class="nav-container-narrow">
             <div class="nav-brand-top">
                 <div class="logo-main-small-inline">
@@ -15,14 +32,12 @@
                 </div>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="problem.html">Problem</a></li>
-                <li><a href="children.html">Children We Help</a></li>
                 <li><a href="solution.html">Solution</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
                 <li><a href="innovation.html">Innovation</a></li>
                 <li><a href="budget.html">Budget</a></li>
-                <li><a href="sustainability.html">Sustainability</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -33,22 +48,60 @@
             </div>
         </div>
     </nav>
-<section id="home"class="hero-transparent">
- <div class="hero-content">
-    <div class="logo-content">
-        <div class="logo-placeholder">
-            <span><img src="en2.jpg" alt=""></span>
-
+    <section id="home" class="hero-transparent">
+        <div class="hero-content">
+            <h1 class="hero-subtitle">Learn and Earn for Children in Crisis</h1>
+            <p class="hero-description" style="font-size:1.5rem;">
+                An innovative platform designed to help vulnerable children, especially in crisis areas like Goma in the
+                Democratic Republic of Congo.
+            </p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="banner-btn donate" style="padding:15px 30px; font-size:1.2rem;">Donate
+                    Now</a>
+                <a href="contact.html" class="banner-btn" style="padding:15px 30px; font-size:1.2rem;">Contact Us</a>
+            </div>
         </div>
-        <h1 class="hero-subtitle"> Learn and for children in crisis</h1>
-        <p class="hero-description"> An innovative designed to help vulnerable children,
-            especially in crisis areas like Goma in Democratic republic of congo.
-            
-        </p>
-    </div>
- </div>
-</section>
-<footer class="footer">
+    </section>
+
+    <!-- Service Boxes -->
+    <section class="boxes-container">
+        <div class="service-box">
+            <h3 style="font-size:1.5rem;">📚 Education Support</h3>
+            <p>Providing direct learning tools, kiosks, and tailored curriculum to children lacking structural schooling
+                options.</p>
+        </div>
+        <div class="service-box">
+            <h3 style="font-size:1.5rem;">💰 Financial Aid</h3>
+            <p>Rewarding scholars physically through milestone achievements, ensuring they securely earn while they
+                learn.</p>
+        </div>
+        <div class="service-box">
+            <h3 style="font-size:1.5rem;">🤝 Community Support</h3>
+            <p>Building cohesive safety nets within regions by integrating local mentors and infrastructural
+                reinforcement.</p>
+        </div>
+    </section>
+
+    <!-- Impact Statistics -->
+    <section class="stats-grid">
+        <div class="stat-card">
+            <h4>1,500+</h4>
+            <p>Children Reached and need help</p>
+        </div>
+        <div class="stat-card">
+            <h4>$50k</h4>
+            <p>Distributed Awards</p>
+        </div>
+        <div class="stat-card">
+            <h4>12</h4>
+            <p>Kiosks Deployed</p>
+        </div>
+        <div class="stat-card">
+            <h4>100%</h4>
+            <p>Commitment</p>
+        </div>
+    </section>
+    <footer class="footer">
         <div class="container">
             <p>L-Earn. All rights reserved.</p>
             <p>Empowering children in crisis areas through education and opportunity.</p>
@@ -57,4 +110,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
