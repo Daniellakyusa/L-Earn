@@ -92,8 +92,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const originalBtnText = submitBtn ? submitBtn.innerText : 'Submit';
             if (submitBtn) submitBtn.innerText = 'Sending...';
 
-            // Send data to our custom backend endpoint
-            fetch("http://localhost:5000/api/contact", {
+            // Send data to FormSubmit API endpoint
+            fetch("https://formsubmit.co/ajax/infoslearn26@gmail.com", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
